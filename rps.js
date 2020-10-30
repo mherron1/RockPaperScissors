@@ -12,7 +12,7 @@ let resetGame = document.querySelector("#playAgain");
 
 draws.textContent = "Draws: " + drawScore;
 computer.textContent = "Computer: " + computerScore;
-user.textContent = "Userscore: " + userScore;
+user.textContent = "User: " + userScore;
 result.textContent = "Make Selection to begin game! (first to 5 wins!)";
 
 function winner(a, b) {

@@ -1,5 +1,5 @@
 #group {
-  margin-top: 75px;
+  margin-top: 25px;
   width: 200px;
   height: 50px;
   font-size: 25px;
@@ -10,14 +10,8 @@
   font-size: 25px;
 }
 
-.gameWinner {
-  color: green;
-  margin-top: 20px;
-}
-
 #playAgain {
   display: none;
-  margin-top: 30px;
 }
 
 #group {
@@ -27,4 +21,8 @@
 .winner {
   font-size: x-large;
   margin-top: 20px;
+}
+
+#outcome {
+  margin-bottom: 20px;
 }
