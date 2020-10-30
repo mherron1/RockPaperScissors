@@ -13,7 +13,7 @@ let resetGame = document.querySelector("#playAgain");
 draws.textContent = "Draws: " + drawScore;
 computer.textContent = "Computer: " + computerScore;
 user.textContent = "User: " + userScore;
-result.textContent = "Make Selection to begin game! (first to 5 wins!)";
+result.textContent = "Rock Paper Scissors! (first to 5 wins!)";
 
 function winner(a, b) {
   if (a > 4 || b > 4) {
@@ -43,6 +43,7 @@ function reset() {
   draws.textContent = "Draws: " + drawScore;
   resetGame.style.display = "none";
   group.style.visibility = "visible";
+  result.textContent = "Rock Paper Scissors! (first to 5 wins!)";
 }
 
 resetGame.addEventListener("click", () => {
