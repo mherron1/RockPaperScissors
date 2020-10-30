@@ -1,111 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock, Paper, Scissors</title>
-
-    <style>
-      button{
-        margin-top:200px;
-        margin-left: 50%;
-        width: 200px;
-        height: 50px;
-        font-size: 25px;
-      }
-
-
-      }
-    </style>
-
-    <script>
-      let user;
-      let computer;
-      let draws;
-      function beginGame() {
-        user = 0;
-        computer = 0;
-        draws = 0;
-        play();
-        play();
-        play();
-        play();
-        play();
-
-        alert(
-          "Final Result" +
-            "\n" +
-            draws +
-            " draws " +
-            "\nUser: " +
-            user +
-            "\nComputer: " +
-            computer
-        );
-      }
-
-      function computerPlay() {
-        random = Math.floor(Math.random() * 3) + 1;
-        if (random === 1) {
-          return "rock";
-        } else if (random === 2) {
-          return "scissors";
-        } else {
-          return "paper";
-        }
-      }
-
-      function play() {
-        let computerSelection = computerPlay();
-        let playerSelection = prompt("rock, paper or scissors?");
-        playerSelection = playerSelection.toLowerCase();
-
-        if (playerSelection === "rock" && computerSelection === "rock") {
-          draws += 1;
-          alert("rock vs rock, its a draw!");
-        }
-        if (playerSelection === "rock" && computerSelection === "scissors") {
-          user += 1;
-
-          alert("rock vs scissors, you win!");
-        }
-        if (playerSelection === "rock" && computerSelection === "paper") {
-          computer += 1;
-          alert("rock vs paper, you lose!");
-        }
-        if (
-          playerSelection === "scissors" &&
-          computerSelection === "scissors"
-        ) {
-          console.log("user: " + user + " computer: " + computer);
-          draws += 1;
-          alert("scissors vs scissors, its a draw!");
-        }
-        if (playerSelection === "scissors" && computerSelection === "rock") {
-          computer += 1;
-
-          alert("scissors vs rock, you lose!");
-        }
-        if (playerSelection === "scissors" && computerSelection === "paper") {
-          user += 1;
-          alert("scissors vs paper, you win!");
-        }
-        if (playerSelection === "paper" && computerSelection === "paper") {
-          draws += 1;
-          alert("paper vs paper, its a draw!");
-        }
-        if (playerSelection === "paper" && computerSelection === "scissors") {
-          computer += 1;
-          alert("paper vs scissors, you lose!");
-        }
-        if (playerSelection === "paper" && computerSelection === "rock") {
-          user += 1;
-          alert("paper vs rock, you win!");
-        }
-      }
-    </script>
   </head>
+
   <body>
-    <button onclick="beginGame()">Begin Game</button>
+    <center><div id="outcome"></div></center>
+    <center>
+      <div id="group">
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+      </div>
+    </center>
+
+    <center>
+      <div id="results">
+        <div id="user"></div>
+        <div id="computer"></div>
+        <div id="draws"></div>
+      </div>
+    </center>
+
+    <center><button id="playAgain">Play Again</button></center>
   </body>
+
+  <script src="rps.js"></script>
 </html>
