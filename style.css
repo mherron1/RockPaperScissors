@@ -1,16 +1,14 @@
 body {
   font-family: Arial;
-  background-color: lightyellow;
+  font-weight: bold;
+  background-color: blue;
+  color: rgb(217, 255, 0);
 }
 
 #group {
   height: 50px;
   font-size: 40px;
   display: block;
-}
-
-#outcome {
-  font-size: 30px;
 }
 
 #playAgain {
@@ -21,12 +19,14 @@ body {
 .winner {
   font-size: 30px;
   margin-top: 25px;
+  color: rgb(25, 255, 5);
 }
 
 #outcome {
   margin-top: 150px;
   margin-bottom: 50px;
-  color: green;
+  color: white;
+  font-size: 30px;
 }
 
 #results {
