@@ -36,7 +36,7 @@ function winner(a, b) {
 function reset() {
   let gameWinner;
   userScore = 0;
-  user.textContent = "Userscore: " + userScore;
+  user.textContent = "User: " + userScore;
   computerScore = 0;
   computer.textContent = "Computer: " + computerScore;
   drawScore = 0;

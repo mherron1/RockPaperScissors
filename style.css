@@ -1,28 +1,41 @@
+body {
+  font-family: Arial;
+  background-color: lightyellow;
+}
+
 #group {
-  margin-top: 25px;
-  width: 200px;
   height: 50px;
-  font-size: 25px;
+  font-size: 40px;
+  display: block;
 }
 
 #outcome {
-  margin-top: 50px;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 #playAgain {
   display: none;
-}
-
-#group {
-  display: block;
+  font-size: 25px;
 }
 
 .winner {
-  font-size: x-large;
-  margin-top: 20px;
+  font-size: 30px;
+  margin-top: 25px;
 }
 
 #outcome {
-  margin-bottom: 20px;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  color: green;
+}
+
+#results {
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+
+#rock,
+#paper,
+#scissors {
+  font-size: 25px;
 }
