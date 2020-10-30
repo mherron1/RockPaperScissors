@@ -43,7 +43,7 @@ function reset() {
   draws.textContent = "Draws: " + drawScore;
   resetGame.style.display = "none";
   group.style.visibility = "visible";
-  result.textContent = "Rock Paper Scissors! (first to 5 wins!)";
+  result.textContent = "First to 5 wins!";
 }
 
 resetGame.addEventListener("click", () => {
