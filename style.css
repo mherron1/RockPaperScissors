@@ -6,12 +6,14 @@ body {
 }
 
 #group {
+  margin-top: 200px;
   height: 50px;
   font-size: 40px;
   display: block;
 }
 
 #playAgain {
+  margin-top: 150px;
   display: none;
   font-size: 25px;
 }

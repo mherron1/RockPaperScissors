@@ -18,7 +18,7 @@ result.textContent = "First to 5 wins!";
 function winner(a, b) {
   if (a > 4 || b > 4) {
     resetGame.style.display = "block";
-    group.style.visibility = "hidden";
+    group.style.display = "none";
     if (a > b) {
       let winner = document.createElement("div");
       winner.classList.add("winner");
@@ -42,7 +42,7 @@ function reset() {
   drawScore = 0;
   draws.textContent = "Draws: " + drawScore;
   resetGame.style.display = "none";
-  group.style.visibility = "visible";
+  group.style.display = "block";
   result.textContent = "First to 5 wins!";
 }
 
