@@ -98,7 +98,7 @@ function playRound(playerSelection) {
   if (playerSelection === "scissors" && computerSelection === "rock") {
     computerScore += 1;
     computer.textContent = "Computer: " + computerScore;
-    result.textContent = "rock vs paper, you LOSE!";
+    result.textContent = "scissors vs rock, you LOSE!";
     winner(userScore, computerScore);
   }
   if (playerSelection === "scissors" && computerSelection === "paper") {
@@ -116,7 +116,7 @@ function playRound(playerSelection) {
   if (playerSelection === "paper" && computerSelection === "scissors") {
     computerScore += 1;
     computer.textContent = "Computer: " + computerScore;
-    result.textContent = "rock vs paper, you LOSE!";
+    result.textContent = "paper vs scissors, you LOSE!";
     winner(userScore, computerScore);
   }
   if (playerSelection === "paper" && computerSelection === "rock") {
